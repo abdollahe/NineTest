@@ -89,13 +89,14 @@ dependencies {
     // optional - Test helpers for LiveData
     testImplementation "androidx.arch.core:core-testing:$lifecycle_version"
 
-    //OKHTTP and OKIO
+    //OKHTTP and OKIO (Required for setting up caching in Picasso)
     implementation 'com.squareup.okhttp3:okhttp:3.13.1'
     implementation 'com.squareup.okio:okio:2.2.2'
 
+    //PICASSO
     implementation 'com.squareup.picasso:picasso:2.71828'
 
-
+    //RECYCLER VIEW
     implementation 'androidx.recyclerview:recyclerview:1.1.0-alpha02'
 
     // MOCK WEB SERVER
@@ -106,8 +107,5 @@ dependencies {
 
     testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0"
 
-//    // BUTTERKNIFE
-//    implementation 'com.jakewharton:butterknife:8.8.1'
-//    kapt 'com.jakewharton:butterknife-compiler:8.8.1'
 
 }
